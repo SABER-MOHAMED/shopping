@@ -1,0 +1,15 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.header-container--element {
+}
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-container--element {
+  background-color: yellow;
+}
