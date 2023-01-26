@@ -1,10 +1,17 @@
-// import Header from "./Components/header/header.component";
-import CategoriesMenu from "./Components/categories-menu/categories-menu.component";
+import Header from "./routes/header/header.component";
+import Shop from "./routes/shop/shop.component";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./routes/home/home.component";
+
 const App = () => {
   return (
-    <div>
-      <CategoriesMenu />
-    </div>
+    <Routes>
+      <Route path="/" element={<Header />}>
+        <Route index element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      </Route>
+    </Routes>
   );
 };
 
