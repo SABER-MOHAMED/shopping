@@ -39,10 +39,10 @@ const SignUpForm = () => {
         password
       );
 
-      // 4. create document for this user
+      // 6. create document for this user
       await createUserDocumentFromAuth(user, { displayName });
 
-      // 5. clear form Fields
+      // 7. clear form Fields
       resetFormFields();
     } catch (err) {
       // 0. check email uniqueness
