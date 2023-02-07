@@ -10,7 +10,14 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
-import { doc, getDoc, setDoc, getFirestore } from "firebase/firestore";
+import {
+  doc,
+  getDoc,
+  setDoc,
+  getFirestore,
+  collection,
+  writeBatch,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBf0s37hBjnPWNdx72HsOp1XCEW3dCgO3A",
